@@ -27,8 +27,11 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
+    "basiclightbox": "^5.0.4",
     "debounce": "^1.2.1",
     "isotope-layout": "^3.0.6",
-    "lodash.debounce": "^4.0.8"
+    "lodash.debounce": "^4.0.8",
+    "masonry-layout": "^4.2.2",
+    "throttle-debounce": "^3.0.1"
   }
 }

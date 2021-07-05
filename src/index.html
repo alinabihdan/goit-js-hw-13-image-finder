@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Pixabay</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -11,34 +11,36 @@
       crossorigin="anonymous"
     />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
   </head>
   <body>
-   
-    <form class="search-form" id="js-search-form">
-      <input type="text" name="query" autocomplete="off" placeholder="Search images..." />
-      <button type="submit" class="btn">Search</button>
-    </form>
-
-    <!-- галерея для картинок -->
-    <div class="gallery grid" id="js-gallery"></div>
-
-    <!-- якорь для интерсекшн скролла -->
-    <div class="anchor"></div>
-
-    <!--
-          Модальное окно для полноразмерного изображения
-          Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
-        -->
-    <div class="lightbox js-lightbox">
-      <div class="lightbox__overlay"></div>
-    
-      <div class="lightbox__content">
-        <img class="lightbox__image" src="" alt="" />
+    <div class="container">
+      <div class="flex">
+        <a class="logo" href="#">PX</a>
+        <form class="search-form" id="js-search-form">
+          <input class="search-input" type="text" name="query" autocomplete="off" placeholder="Search images..." />
+          <button type="submit" class="btn submit-btn">
+            <svg width="30" height="30">
+              <use href="./images/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
       </div>
-    
-      <button type="button" class="lightbox__button" data-action="close-lightbox" style="display: none;"></button>
+      <!-- галерея для картинок -->
+      <ul class="gallery grid" id="js-gallery"></ul>
+      <div class="anchor"></div>
     </div>
+
+    <button class=" btn btn-to-top is-hidden">
+      <svg class="icon" width="30" height="30">
+        <use href="./images/sprite.svg#icon-arrowup"></use>
+      </svg>
+    </button>
+    
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    
   </body>
 </html>

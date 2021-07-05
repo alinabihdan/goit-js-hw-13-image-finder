@@ -1,0 +1,55 @@
+.btn {
+  border: none;
+}
+.btn.is-hidden {
+  display: none;
+}
+.logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 32px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn-to-top {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  z-index: 80;
+  opacity: 0.6;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.btn-to-top:hover {
+  opacity: 1;
+  box-shadow: 1 2px 4px 0 rgb(60 64 67 / 30%), 2 4px 8px 4px rgb(60 64 67 / 15%);
+}
+
+.icon {
+  fill: #696969;
+}
+
+.submit-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: #000;
+  fill: #fff;
+}
